@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="img/hyper.ico" type="image/x-icon">
+        <title>HYPERLINKS</title>
+    </head>
+    <body>
+        <h1><font color="#8B4513">Definição de Hyperlinks</font></h1>
+        <p>Um <a href="https://techlib.wiki/definition/hyperlink.html" target="_blank" rel="external">hiperlink </a>é uma palavra, frase ou imagem na qual você pode clicar para ir para um novo documento ou uma nova seção do documento atual. Os hiperlinks são encontrados em quase todas as páginas da Web, permitindo que os usuários cliquem no caminho de uma página para outra. Os hiperlinks de texto geralmente são azuis e sublinhados, mas não precisam ser.<br>Os hiperlinks, geralmente chamados de "links", são comuns em páginas da Web, mas podem ser encontrados em outros documentos de hipertexto. Isso inclui certas enciclopédias, glossários, dicionários e outras referências que usam hiperlinks. Os links funcionam da mesma maneira que na Web, permitindo que o usuário pule de uma página para outra. Basicamente, os hiperlinks permitem que as pessoas pesquisem informações em hiper velocidade.</p>
+        <h1><font color="#8B4513">Tipos de links</font></h1>
+        <dl>
+            <dt><font color="#CD853F">Link interno</font></dt>
+            <dd>Um link entre duas páginas da web, em que ambas as páginas pertencem ao mesmo site, é chamado de link interno. Sem links internos, não existe site (a menos, é claro, que seja um site de uma página).</dd>
+            <dt><font color="#CD853F">Link externo</font></dt>
+            <dd>Um link de sua página da web para a página de outra pessoa. Sem links externos, não há Web, pois a Web é uma rede de páginas da web. Use links externos para fornecer informações além do conteúdo disponível em sua página da web.</dd>
+            <dt><font color="#CD853F">Links de entrada</font></dt>
+            <dd>Um link da página de outra pessoa para o seu site. É o oposto de um link externo.</dd>
+        </dl>
+        <p>Por padrão, os links aparecerão da seguinte forma em todos os navegadores:</p>
+        <ul>
+            <li>Um link não visitado está sublinhado e em azul</li>
+            <li>Um link visitado está sublinhado e roxo</li>
+            <li>Um link ativo está sublinhado e vermelho</li>
+        </ul>
+        <p><b>OBSERVAÇÃO:</b>Os links podem, é claro, ser estilizados com CSS, para obter outra aparência!</p>
+        <h1><font color="#8B4513">Sintaxe</font></h1>
+        <p>&lt; <font color="red">a </font><font color="blue">href="url"</font>&gt;Texto do Link&lt;<font color="red">/a</font>&gt;<br>A &lt;<font color="red">a</font>&gt; marca HTML define um hiperlink.<br>O <font color="blue">href</font> é o atributo mais importante do elemnto <font color="red">a</font>, ele que indica o destino do linnk, definido em href="<font color="blue">link</font>".<br>Ja o "Texto do Link" é a parte que ficará visível ao leitor. Clicando nele, enviará a pessoa para o endereço URL especificado.</p>
+        <h2><font color="#CD853F">Atributo de Destino</font></h2>
+        <p>Seguindo a sintaxe acima, por padrão, a página vinculada será exibida no navegador atual, para mudar isso usamos o atributo <font color="red">target</font> ele especifica onde abrir o documento vinculado, &lt; <font color="red">a </font><font color="blue">href="url"</font><font color="red"> href="valor"</font>&gt;Texto do Link&lt;<font color="red">/a</font>&gt;. Ele tem os seguintes valores:</p>
+        <ul>
+            <li><font color="red">_self</font>: Abre o documento na mesma janela / guia em que foi clicado</li>
+            <li><font color="red">_blank</font>: Abre o documento em uma nova janela ou guia</li>
+        </ul>
+        <p>Exemplos:</p>
+        <dl>
+            <dt>_Self</dt>
+            <dd>&lt; <font color="red">a </font><font color="blue">href="url"</font><font color="red"> target="_self"</font>&gt;<a href="https://www.w3schools.com/html/html_links.asp" target="_self">Texto do Link</a>&lt;<font color="red">/a</font>&gt;</dd>
+            <dt>_Blank</dt>
+            <dd>&lt; <font color="red">a </font><font color="blue">href="url"</font><font color="red"> target="_blank"</font>&gt;<a href="https://www.w3schools.com/html/html_links.asp" target="_blank">Texto do Link</a>&lt;<font color="red">/a</font>&gt;</dd>
+        </dl>
+        <h1><font color="#8B4513">Usando Imagem como link</font></h1>
+        <h2><font color="#CD853F">Sintaxe</font></h2>
+        <p>Para usar uma imagem como link, basta colocar a <font color="red">&lt;img&gt;</font> tag dentro da <font color="red">&lt;a&gt;</font>:</p>
+        <p><font color="red">&lt;a <font color="blue">href=<font color="brown">"URL"</font>target=</font><font color="brown">"valor"</font>&gt;</font><br><font color="red"> &lt;img src=<font color="brown">"local_da_imagem/nome_da_imagem"</font>alt=</font><font color="brown">"descrição"</font>&gt;</font><font color="red"> &lt;\a&gt;</font></p>
+        <a href="https://www.w3schools.com/html/html_links.asp" target="_blank">
+        <img src="img/w3.png" alt="W3School" style="width:42px;height:42px;">
+        </a>
+        <h1><font color="#8B4513">Usando E-mail como link</font></h1>
+        <h2><font color="#CD853F">Sintaxe</font></h2>   
+        <p>Use <font color="red">mailto:</font> dentro do <font color="red">href</font> para criar um link que abre o programa de e-mail do usuário (para permitir que ele envie um novo e-mail):</p> 
+        <p><font color="red">&lt;a href=<font color="blue">"mailto:bla@ble.com"</font></font>&gt; <a href="mailto:lohrenaaparecida@gmail.com">Enviar e-mail</a><font color="red">&lt;/a&gt;</font></p>        
+    </body>
+</html>
