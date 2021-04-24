@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <title>Branches e Hospedagem</title>
+</head>
+<body>
+    <h1>Branches e Hospedagem</h1>
+    <h2><font color="red" size="10">Branches</font></h2>
+    <h2>Definição de Branches</h2>
+    <p>São <b>ramificações</b> de um <b>projeto de software</b> ou <b>documento</b> e tem como objetivo o <b>desenvolvimento paralelo</b> de:</p>
+    <ul>
+        <li>Novas funcionalidade;</li>
+        <li>Correção de problemas;</li>
+        <li>Alteração de código.</li>
+    </ul>
+    <h2>Tipos de Branches</h2>
+    <dl>
+        <dt>Branch Master ou Main:</dt>
+        <dd>Braço Principal de um projeto em um repositório.</dd>
+        <dt>Branch Secundária:</dt>
+        <dd>Braço secundário de um projeto em um repositório</dd>
+    </dl>
+    <p>Você pode criar um Branch Secundário tanto do Master/ Main, quanto de um outro Branch Secundario e assim por diante. <br>No Branch Master/Main toda e qualquer alteração junto com o commit feito nela irá ficar nela. <br>Ja se for feito em um Branch Secundária ficará apenas nesse Branch, essas alterações não sera feita no Branch Master/Main, onde será preciso um Mager. Segue como ...</p>
+    <h2>Passo a passo para a criação de Branchs:</h2>
+    <ol type="I">
+        <li>Acesse sua conta no <a href="https://github.com/" target="_blank">Git Hub</a></li>
+        <li>Em seguida entre com a mesma conta logada no GitHub.com no GitHub Desktop</li>
+        <li>Na tela inicial do GitHub Desktop, você clicara em "File" e depois em "New Repository", onde aparecerá a seguinte tela, que você ira nomear, descrever, inicializar com um arquivo README e deixar em uma licença pública:</li>
+        <p><img src="img/i1.png" alt="print" width="70%" leight="70%"></p>
+        <li>Após isso, você irá clicar em "Publich repository",que irá publicar o seu respectivo Repositório no GitHub.com. <b>Não esqueça de desmarcar a opção "Keep this code private", para que seu repositório seja público.</b></li>
+        <li>E então abra ele no Visual Code ou na plataforma em que você edita, clicando na opção "Open in Visual Studio Code". E sua tela ficará assim:</li>
+        <p><img src="img/i2.png" alt="print" width="70%" leight="70%"></p>
+    </ol>
+    <p>Assim você terá finalizado a <b>criação</b> do seu repositório, agora será feito as criações de Branch e como manipular e depois a Hospedagem dele.</p>
+    <h2>Criação e manipulação de Branch Secundária</h2>
+    <p>Em seu VS Code crie um arquivo HTML nomeado de "index.html" e inicialize com a estrutura do Html, com o DOCTYPE, head e body. Ficando assim:</p>
+    <img src="img/i3.png" alt="print" width="70%" leight="70%">
+    <p>Em seguida volte ao seu GitHub Desktop e faça um commit dessa alteração e publique no GitHub.com.</p>
+    <dl>
+        <dt>Fazendo um commit:</dt>
+        <dd><img src="img/i4_LI.jpg" alt="print" width="70%" leight="70%"></dd>
+        <dt>Publicando no GitHub.com:</dt>
+        <dd><img src="img/i5_LI.jpg" alt="print" width="70%" leight="70%"></dd>
+    </dl>
+    <p><b>Agora perceba que tudo isso foi feito no Branch Master/Main:</b></p>
+    <img src="img/i6_LI.jpg" alt="print" width="70%" leight="70%">
+    <p>Agora se você clicar nessa parte destacada e depois em "New Branch", você estará crianda o Branch Secundário, nomeie da forma como entender e clique em "Create branch"<br><b>Não esqeuça de publicar seu branch clicando em "Publish branch"</b><br>Em seguida abra ele no Open Visual Code. <br>Após isso faça algumas alterações no código, como por exemplo, modofique tittle e adicione um h1:</p>
+    <img src="img/i7.png" alt="print" width="70%" leight="70%">
+    <p>Em seguida vá ao GitHub Desktop, faça um commit e um push!<br>Depois mude para o main clicando aqui:</p>
+    <img src="img/i8.png" alt="print" width="70%" leight="70%">
+    <p>Clique para abrir no Visual Studio Code e você verá que as modificaçãoes feitas no Branch secundário não foram feitas no main:</p>
+    <img src="img/i9.png" alt="print" width="70%" leight="70%">
+    <p>Porém quando você tiver certeza que poderá adicionar o código do Branch Secundário no Branch Main você fará o seguinte: <br><b>IMPORTANTE: VOCÊ DEVE ESTAR NO BRANCH MAIN PARA FAZER ESSA JUNÇÃO</b></p>
+    <ul>
+        <li>Primeiro passo, clique em Branch na borda de cima e em seguida em "Marge..."</li>
+        <img src="img/i10.png" alt="print" width="70%" leight="70%">
+        <li>Então selecione a qual Branch secundário você quer juntar com o Branch Main e depois clique em "Marge ..."</li>
+        <img src="img/i11.png" alt="print" width="70%" leight="70%">
+        <li>Ao final clique em "Push" e abra o código no Visual Studio Code e então ele estara com a junção dos dois.</li>
+    </ul>
+    <h2><font color="red" size="10">Hospedagem</font></h2>
+    <p>Para a hospedagem, você irá no <a href="https://github.com/" target="_blank">Git Hub</a> e seguirá os seguintes passos:</p>
+    <ul>
+        <li>Selecionará seu repositório</li>
+        <img src="img/i12.png" alt="print" width="70%" leight="70%">
+        <li>Clicará em Settings</li>
+        <li>E vai rodar a página até achar "GitHub Pages"</li>
+        <li>Depois, onde esta "None" você selecionará o "mais" e clicr em "Save"</li>
+        <img src="img/i13.png" alt="print" width="70%" leight="70%">
+        <li>E então, ele irá gerar a URL que se você clicar, irá abrir.</li>
+        <img src="img/i14_LI.jpg" alt="print" width="70%" leight="70%">
+    </ul>
+</body>
+</html>
