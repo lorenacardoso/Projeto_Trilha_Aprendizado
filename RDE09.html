@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RDE 09 - MULTIMIDIAS</title>
+</head>
+<body>
+    <h1>Incorporando Multimídia ao site</h1>
+    <h2>Tag Iframe</h2>
+
+    <h3>Descrição</h3>
+    <p>A tag <font color="red">&lt;iframe&gt;</font> especifica um quadro embutido.<br>Um quadro embutido é usado para incorporar outro documento ao documento HTML atual.<br>Podendo ser:</p>
+    <ul>
+        <li>Sites;</li>
+        <li>Áudios;</li>
+        <li>Vídeos</li>
+    </ul>
+
+    <h3>Inforporar outro site dentro do site</h3>
+    <h4>Exemplo:</h4>
+    <iframe src="http://irati.ifpr.edu.br" height="300" width="300"></iframe>
+    <h4>Sintaxe:</h4>
+    <p>&lt;<font color="blue">inframe </font> <font color="#87CEFA">src</font>=<font color="#F4A460">"http://irati.ifpr.edu.br" </font> <font color="#87CEFA">height</font>=<font color="	#F4A460">"300" </font> <font color="#87CEFA">width</font>=<font color="	#F4A460">"300"</font>&gt;&lt;<font color="blue">/inframe</font>&gt;</p>
+    <p>Sendo :</p>
+    <dl>
+        <dt><b>Height</b></dt>
+        <dd>Altura que você quer que o vídeo tenha.</dd>
+        <dt><b>Width</b></dt>
+        <dd>Largura que você quer que o vídeo tenha.</dd>
+    </dl>
+
+    <h3>Embutir áudio no site</h3>
+    <h4>Exemplo:</h4>
+    <iframe width="30%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/332103288&color=%2356585c&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/lewiscapaldi" title="Lewis Capaldi" target="_blank" style="color: #cccccc; text-decoration: none;">Lewis Capaldi</a> · <a href="https://soundcloud.com/lewiscapaldi/bruises" title="Bruises" target="_blank" style="color: #cccccc; text-decoration: none;">Bruises</a></div>
+    <h4>Sintaxe:</h4>
+    <p>Essa sintaxe são mais longa, mas há uma maneira mais simples de fazer, segue ai.<br>Abra uma plataforma de áudio, recomendo <a href="https://soundcloud.com/">Soundcloud</a>, onde você escolhe um áudio de sua preferência, clica em <q>Compartilhar/Partilhar</q> e depois em <q>Incoporar</q>.<br>Em seguida, copie o código que aparecer e adicione juntamente ao código que você ja tem, onde ficará assim:</p>
+    <img src="img/sound.png" alt="Print">
+
+    <h3>Incorporar vídeos ao site</h3>
+    <h4>Exemplo:</h4>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/fYJl-7jRzuw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <h4>Sintaxe:</h4>
+    <p>Também é uma sintaxe longa, porém a plataforma <a href="https://www.youtube.com/">Youtube</a> oferece a mesma dinâmica que a plataforma Soundcloud, onde você escolhe o seu vídeo, clica em <q>Compartilhar/Partilhar</q> e depois em <q>Incoporar</q>.<br>Em seguida, copie o código que aparecer e adicione juntamente ao código que você ja tem, onde ficará assim:</p>
+    <img src="img/yt.png" alt="Print">
+    
+    <h2>Tag Vídeo</h2>
+    <p>A tag &lt;video&gt; é usada para incorporar conteúdo de vídeo em um documento, como um clipe de filme ou outros fluxos de vídeo.<br>A tag &lt;video&gt; contém uma ou mais &lt;source&gt;tags com diferentes fontes de vídeo. O navegador escolherá a primeira fonte que suporta.<br>O texto entre as tags &lt;video&gt; e &lt;/video&gt;só será exibido em navegadores que não suportam o elemento &lt;video&gt;.<br>Existem três formatos de vídeo suportados em HTML: MP4, WebM e OGG.</p>
+    <h3>Exemplo:</h3>
+    <video poster="video/Bike.jpg" controls>
+        <source src="video/_Bike.mp4" type="video/mp4">
+        <source src="video/Bike.webm" type="video/webm">
+        <source src="video/Bike.ogv" type="video/ogv">
+    </video>
+    <h3>Sintaxe</h3>
+    <img src="img/vv.png" alt="Print">
+    <p>Onde <q>poster</q> é a imagem que ficará até o usuário dar o play no vídeo</p>
+
+    <h2>Tag Áudio</h2>
+    <p>A &lt;audio&gt; tag é usada para incorporar conteúdo de som em um documento, como música ou outros fluxos de áudio.<br>A &lt;audio&gt;tag contém uma ou mais &lt;source&gt;tags com diferentes fontes de áudio. O navegador escolherá a primeira fonte que suporta.<br>O texto entre as tags &lt;audio&gt; e &lt;audio&gt;só será exibido em navegadores que não suportam o &lt;audio&gt; elemento.<br>Existem três formatos de áudio suportados em HTML: MP3, WAV e OGG.</p>
+    <h3>Exemplo</h3>
+    <audio preload="metadata" controls>
+        <source src="audio/Hey Sailor - Letter Box.mp3" type="audio/mp3">
+        <source src="audio/Hey Sailor - Letter Box.ogg" type="audio/ogg">
+        <source src="audio/Hey-Sailor-Letter-Box.wav" type="audio/wav"> 
+    </audio>
+    <h3>Sintaxe:</h3>
+    <img src="img/au.png" alt="Print">
+
+    <h2>Tag Picture</h2>
+    A &lt;picture&gt; tag oferece aos desenvolvedores da web mais flexibilidade na especificação de recursos de imagem.<br>O uso mais comum do &lt;picture&gt; elemento será para direção de arte em designs responsivos. Em vez de ter uma imagem que é dimensionada para cima ou para baixo com base na largura da janela de visualização, várias imagens podem ser projetadas para preencher melhor a janela de visualização do navegador.<br>O &lt;picture&gt; elemento contém duas tags: uma ou mais tags &lt;source&gt; e uma tag &lt;img&gt;.<br>O navegador procurará o primeiro elemento &lt;source&gt; onde a consulta de mídia corresponde à largura da janela de visualização atual e, em seguida, exibirá a imagem adequada (especificada no atributo srcset). O elemento &lt;img&gt; é necessário como o último filho do &lt;picture&gt; elemento, como uma opção de fallback se nenhuma das tags de origem corresponder.
+    <h3>Exemplo:</h3>
+    <picture>
+        <source media="(max-width:500px)" srcset="img/bike_110.jpg">
+        <source media="(max-width:700px)" srcset="img/bike_320.jpg">
+        <source media="(max-width:1000px)" srcset="img/bike_640.jpg">
+        <img src="img/bike_full.jpg" alt="Mtb Por-do-sol">
+    </picture>
+    <h3>Sintaxe</h3>
+    <img src="img/ll.png" alt="Print">
+</body>
+</html>
