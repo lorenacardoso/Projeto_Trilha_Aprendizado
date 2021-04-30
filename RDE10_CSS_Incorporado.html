@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/CSS3.svg" type="image/x-icon">
+    <title>CSS - CASCADING STYLE SHEETS</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color:rgb(186, 221, 223);
+        }
+        h1{
+            background-color: rgb(116, 169, 230); text-align: center;
+            color: darkblue;
+        }
+        h2{
+            background-color: rgb(94, 175, 196);
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS-Cascading Style Sheets</h1>
+    <h2>O que é CSS?</h2>
+    <p><b>Cascading Style Sheets</b> - Folhas de Estilo em Cascata - tem por objetivo <b>realizar a estilização</b> de conteúdo de documentos HTML. Podem definir cores, fontes, espaçamentos, dentre outros.</p>
+    <h2>Sintaxe:</h2>
+    <p>seletor {</p>
+    <pre>
+        propriedades: valor; /*comentario*/<br>
+        propriedades-subpropriedades: valor;
+    </pre>
+    <p>}</p>
+    <h2>Componentes:</h2>
+    <dl>
+        <dt><b>Seletores:</b></dt>
+        <dd>Seleciona elementos HTML com base no nome do elemento ao qual o estilo será aplicado.</dd>
+        <dt><b>Propriedades:</b></dt>
+        <dd>O aspecto específico do elemento que você quer usar como estilo.</dd>
+        <dt><b>Valores:</b></dt>
+        <dd>A configuração aplicada ao atributo.</dd>
+    </dl>
+    <h2>Exemplo:</h2>
+    <p>p {</p>
+    <pre>
+        color: blue;<br>
+        text-align: center;
+    </pre>
+    <p>}</p>
+    <h2>As três formas de se utilizar CSS:</h2>
+    <dl>
+        <dt><b>Inline:</b></dt>
+        <dd><ul>
+            <li>Os códigos são definidos <b>dentro de uma tag HTML.</b></li>
+            <li>Afetam somente a tag em que foi definida.</li>
+        </ul></dd>
+        <dt><b>Incorporado:</b></dt>
+        <dd><ul>
+            <li>Os códigos CSS são definidos no cabeçalho, <b>dentro da tag head</b>.</li>
+            <li>Afetam somente o documento em que foi definido.</li>
+        </ul></dd>
+        <dt><b>Externo:</b></dt>
+        <dd><ul>
+            <li>Os códigos são definidos <b>em um arquivo externo</b>.</li>
+            <li>Afetam todos os documentos que estão linkados ao CSS.</li>
+        </ul></dd>
+    </dl>
+</body>
+</html>

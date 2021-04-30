@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/CSS3.svg" type="image/x-icon">
+    <title>CSS - CASCADING STYLE SHEETS</title>
+</head>
+<body>
+    <h1>CSS-Cascading Style Sheets</h1>
+    <h2>O que é CSS?</h2>
+    <p><b>Cascading Style Sheets</b> - Folhas de Estilo em Cascata - tem por objetivo <b>realizar a estilização</b> de conteúdo de documentos HTML. Podem definir cores, fontes, espaçamentos, dentre outros.</p>
+    <h2>Sintaxe:</h2>
+    <p>seletor {</p>
+    <pre>
+        propriedades: valor; /*comentario*/<br>
+        propriedades-subpropriedades: valor;
+    </pre>
+    <p>}</p>
+    <h2>Componentes:</h2>
+    <dl>
+        <dt><b>Seletores:</b></dt>
+        <dd>Seleciona elementos HTML com base no nome do elemento ao qual o estilo será aplicado.</dd>
+        <dt><b>Propriedades:</b></dt>
+        <dd>O aspecto específico do elemento que você quer usar como estilo.</dd>
+        <dt><b>Valores:</b></dt>
+        <dd>A configuração aplicada ao atributo.</dd>
+    </dl>
+    <h2>Exemplo:</h2>
+    <p>p {</p>
+    <pre>
+        color: blue;<br>
+        text-align: center;
+    </pre>
+    <p>}</p>
+    <h2>As três formas de se utilizar CSS:</h2>
+    <dl>
+        <dt><b>Inline:</b></dt>
+        <dd><ul>
+            <li>Os códigos são definidos <b>dentro de uma tag HTML.</b></li>
+            <li>Afetam somente a tag em que foi definida.</li>
+        </ul></dd>
+        <dt><b>Incorporado:</b></dt>
+        <dd><ul>
+            <li>Os códigos CSS são definidos no cabeçalho, <b>dentro da tag head</b>.</li>
+            <li>Afetam somente o documento em que foi definido.</li>
+        </ul></dd>
+        <dt><b>Externo:</b></dt>
+        <dd><ul>
+            <li>Os códigos são definidos <b>em um arquivo externo</b>.</li>
+            <li>Afetam todos os documentos que estão linkados ao CSS.</li>
+        </ul></dd>
+    </dl>
+    <h2>CSS Inline:</h2>
+    <p>Como explicado o CSS Inline é feito na própria tag HTML, segue o exemplo:</p>
+    <img src="img/v.png" alt="print">
+    <p>Perceba que dentro de cada Tag há "style" esse comando é o que mexe no estilo da Tag, como por exemplo, ali mudou a cor do fundo e a fonte das letras do "body", a cor do fundo de cada<br> e a própria cor dos "h2" e a cor do fundo, a cor e o posicionamento do "h1".</p>
+    <p>Segue como fica o site com esse tipo de CSS, clicando <a href="RDE10_CSS_Inline.html" target="_blank">aqui</a></p>
+    <h2>CSS Incorporado:</h2>
+    <p>O Incorporado é no espaçamento do "head", segue o exemplo:</p>
+    <img src="img/vt.png" alt="print">
+    <p>Segue esse mesmo modelo:</p>
+    <p>seletor {
+        <pre>
+            propriedades: valor; /*comentario*/<br>
+            propriedades-subpropriedades: valor;
+        </pre>
+    }</p>
+    <p>Segue como fica o site com esse tipo de CSS, clicando <a href="RDE10_CSS_Incorporado.html" target="_blank">aqui</a></p>
+    <h2>CSS Externo:</h2>
+    <p>Ja o CSS Externo é necessário criar um documento "style.css" em uma pasta nomeada "css", onde você ira linkar no seu arquivo HTML, segue o exemplo do linkamento:</p>
+    <img src="img/vu.jpg" alt="print">
+    <p>O arquivo "css/style.css:"</p>
+    <img src="img/vz.png" alt="print">
+    <p>Segue como fica o site com esse tipo de CSS, clicando <a href="RDE10_CSS_Externo.html" target="_blank">aqui</a></p>
+</body>
+</html>
