@@ -37,24 +37,14 @@ header{
 	background-color: #593F1E;
 }
 
-.conteudo{
-	float: left;
-	padding: 14px;
-}
 
-.conteudo.lateral{
-	width: 20%;
-	height: 210px;
-	margin: 10px 2px 25px 2px;
+.principal{
+	margin: 15px 2px 25px 2px;
 	background-color: #D9C6B0;
-
-}
-
-.conteudo.central{
-	width: 52%;
-	height: 210px;
-	margin: 10px 2px 2px 2px;
-	background-color: #D9C6B0;
+	text-align: justify;
+	padding: 10px;
+	border-radius: 5px;
+	box-shadow: 10px 10px 10px #8C7972;
 }
 
 .principal h2{
@@ -63,8 +53,8 @@ header{
 }
 
 .rodape{
-	color: black;
-	font-size: 10px;
+	color: darkgray;
+	font-sze: 10px;
 	text-align: left;
 	padding: 20px;
 }
